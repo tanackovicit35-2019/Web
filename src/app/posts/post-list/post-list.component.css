@@ -1,0 +1,28 @@
+
+mat-card{
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 4px;
+  background-color:#AE69FF;
+  flex-direction: column;
+}
+
+img{
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+
+ }
+mat-card-header{
+  width: 50%;
+  padding-left: 25%;
+  color: white;
+}
+mat-card-content{
+  width: 100%;
+  color: white;
+}
+.multiline {
+  white-space: pre-wrap;
+}
+

@@ -1,0 +1,18 @@
+<mat-card *ngFor="let post of posts">
+  <mat-card-header class="multiline">
+    <mat-card-title>
+      <h1>{{post.title}}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="multiline" style="text-align: center;">
+    <p>
+      {{post.content}}
+    </p>
+  </mat-card-content>
+  <img mat-card-image src="{{post.picture}}">
+  <mat-card-actions class="actions">
+     <button mat-button  style="background-color: white; color: #AE69FF;">Edit</button>
+     <!--a umesto button--> <!--[routerLink]="['/edit', post.id]"--><!--/a-->
+    <button mat-button style="background-color: white;color: red; float:right;" (click)="onDelete(post.id)" >Delete</button>
+  </mat-card-actions>
+</mat-card>

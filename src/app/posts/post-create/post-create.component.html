@@ -1,0 +1,17 @@
+<mat-card class="mcard">
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field style="background-color: white; margin-bottom: 10px; color: #AF69EE;">
+      <input style="margin-left: 5px;" matInput type="text" name="title" [ngModel]="post.title" required placeholder="Input title here!" #title="ngModel">
+      <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <mat-form-field style="background-color: white; margin-bottom: 10px; color: #AF69EE;">
+      <textarea style="margin-left: 5px;" matInput rows="3" name="content" [ngModel]="post.content" required placeholder="Input content here!" #content="ngModel"></textarea>
+      <mat-error *ngIf="content.invalid">Please enter post content.</mat-error>
+    </mat-form-field>
+    <mat-form-field style="background-color: white; margin-bottom: 10px; color: #AF69EE;">
+      <input enctype='multipart/form-data' style="margin-left: 5px;" matInput type="url" name="picture" [ngModel]="post.picture" required placeholder="Input an url of an image!" #picture="ngModel">
+      <mat-error *ngIf="picture.invalid">Please enter a post image url.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button style="background-color: #AF69EE; color: white;" type="submit">Save Post</button>
+  </form>
+</mat-card>

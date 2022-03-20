@@ -1,0 +1,13 @@
+.mcard {
+  background-image: url('https://media0.giphy.com/media/jsUIl8W67ohMXGx1V8/giphy.gif');
+  background-repeat: repeat;
+  background-size: cover;
+}
+mat-card{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 16px;
+}
+mat-form-field, textarea{
+  width: 100%;
+}
